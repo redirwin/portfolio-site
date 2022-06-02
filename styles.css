@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 350px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background: url(images/funky-lines.webp);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*******************
+    Typography
+*******************/
+
+blockquote {
+  font-family: "Inria Serif", serif;
+  text-transform: none;
+  font-size: 1.5rem;
+  color: #ece1cc;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff;
+}
+
+h2 {
+  margin-bottom: 2.5em;
+  color: #ece1cc;
+}
+
+/*******************
+    Layout
+*******************/
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text {
+  order: -1;
+}
+
+.column-one-container {
+  background-color: rgba(60, 61, 89, 0.93);
+  padding: 2em;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-image-container {
+  width: 10em;
+  height: 10em;
+  margin: 0 auto 3em;
+  border: 2px solid #ece1cc;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: .9;
+}
+
+/*******************
+    Tech Selection
+*******************/
+
+.tech {
+  display: none;
+}
+
+/*******************
+    Social Links
+*******************/
+
+.social {
+  list-style: none;
+  padding: 0;
+}
+
+/*******************
+    Project cards
+*******************/
