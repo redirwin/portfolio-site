@@ -10,17 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Oswald:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css" />
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/b430f324c7.js"
-      crossorigin="anonymous"
-    ></script>
+
     <title>David Irwin - Front End Web Developer</title>
   </head>
   <body>
     <div class="page-container">
       <div class="column-one-container">
-        <header>
+        <header inner-container>
           <div class="image-quote-container">
             <div class="profile-image-container">
               <img
@@ -29,7 +27,7 @@
                 alt="Photo of David Irwin"
               />
             </div>
-            <blockquote>
+            <blockquote class="inner-container">
               I believe the web should be friendly, functional, and beautiful.
             </blockquote>
           </div>
@@ -39,7 +37,9 @@
           </div>
         </header>
 
-        <section class="tech">
+        <!-- <div class="divider"></div> -->
+
+        <section class="tech inner-container">
           <h2 class="heading-tech">Tech I Use</h2>
           <ul class="tech-selections-list">
             <li class="tech-selected">All</li>
@@ -50,12 +50,28 @@
         </section>
 
         <footer>
-          <ul class="social">
-            <li class="linkedin"><a href="#">LinkedIn</a></li>
-            <li class="github"><a href="#">GitHub</a></li>
-            <li class="phone"><a href="#">Phone</a></li>
-            <li class="email"><a href="#">Email</a></li>
-          </ul>
+          <div class="social-icons-container inner-container">
+            <a href="#" class="social-icon linkedin">
+              <div>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a href="#" class="social-icon github">
+              <div>
+                <i class="fa-brands fa-github"></i>
+              </div>
+            </a>
+            <a href="#" class="social-icon phone">
+              <div>
+                <i class="fa-solid fa-phone"></i>
+              </div>
+            </a>
+            <a href="#" class="social-icon email">
+              <div>
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+            </a>
+          </div>
         </footer>
       </div>
 
