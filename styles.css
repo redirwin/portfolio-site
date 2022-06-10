@@ -84,7 +84,7 @@ blockquote {
   font-size: 1.5rem;
   max-width: 400px;
   color: #ece1cc;
-  margin: 0 auto 3em;
+  margin: 0 auto 1em;
   text-shadow: 0px 0px 1px white;
 }
 
@@ -128,11 +128,13 @@ blockquote {
   justify-content: center;
   align-items: center;
   background: none;
+  text-decoration: none;
 }
 
 .social-icon:active {
   cursor: pointer;
-  background: #ece1cc;
+  background: #3c3d59;
+  color: #ece1cc;
 }
 
 .fa-brands,
@@ -141,6 +143,12 @@ blockquote {
   font-size: 1.25rem;
   color: #fff;
   text-decoration: none;
+}
+
+.fa-brands:active,
+.fa-solid:active,
+.fa-regular:active {
+  color: #ece1cc;
 }
 
 /*******************
