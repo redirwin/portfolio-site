@@ -74,8 +74,9 @@
     justify-content: flex-start;
   }
 
-  .social-icon,
-  .social-icon:visited {
+  .social-icon:link,
+  .social-icon:visited,
+  .social-icon:focus {
     margin-right: 1.5em;
     width: 3.5em;
     height: 3.5em;

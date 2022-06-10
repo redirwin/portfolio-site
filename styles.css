@@ -122,9 +122,9 @@ blockquote,
   max-width: 350px;
 }
 
-.social-icon,
-.social-icon.visited,
-.social-icon:focus {
+a.social-icon:link,
+a.social-icon:visited,
+a.social-icon:focus {
   border: 2px solid white;
   border-radius: 50%;
   width: 3em;
@@ -135,22 +135,22 @@ blockquote,
   background: none;
 }
 
-.social-icon:hover,
 .social-icon:active {
-  cursor: pointer;
   background: #3c3d59;
   color: #ece1cc;
 }
 
+/* @media (hover: hover) {
+  .social-icon:hover {
+    cursor: pointer;
+    background: #3c3d59;
+    color: #ece1cc;
+  }
+} */
+
 .fa-brands,
 .fa-solid,
-.fa-regular,
-.fa-brands:visited,
-.fa-solid:visited,
-.fa-regular:visited,
-.fa-brands:focus,
-.fa-solid:focus,
-.fa-regular:focus {
+.fa-regular {
   font-size: 1.5rem;
   color: #fff;
   border-radius: 50%;
@@ -160,14 +160,5 @@ blockquote,
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.fa-brands:hover,
-.fa-solid:hover,
-.fa-regular:hover,
-.fa-brands:active,
-.fa-solid:active,
-.fa-regular:active {
-  color: #ece1cc;
-  background: #3c3d59;
+  background: none;
 }
