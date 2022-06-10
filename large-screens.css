@@ -74,14 +74,16 @@
     justify-content: flex-start;
   }
 
-  .social-icon {
+  .social-icon,
+  .social-icon:visited {
     margin-right: 1.5em;
     width: 3.5em;
     height: 3.5em;
     transition: all 0.35s;
   }
 
-  .social-icon:hover {
+  .social-icon:hover,
+  .social-icon:active {
     color: #ece1cc;
     transform: translateY(-10px);
     background: #3c3d59;

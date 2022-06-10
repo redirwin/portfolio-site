@@ -122,7 +122,8 @@ blockquote,
   max-width: 350px;
 }
 
-.social-icon {
+.social-icon,
+.social-icon.visited {
   border: 2px solid white;
   border-radius: 50%;
   width: 3em;
@@ -133,6 +134,7 @@ blockquote,
   background: none;
 }
 
+.social-icon:hover,
 .social-icon:active {
   cursor: pointer;
   background: #3c3d59;
@@ -141,7 +143,10 @@ blockquote,
 
 .fa-brands,
 .fa-solid,
-.fa-regular {
+.fa-regular,
+.fa-brands:visited,
+.fa-solid:visited,
+.fa-regular:visited {
   font-size: 1.5rem;
   color: #fff;
   border-radius: 50%;
@@ -153,6 +158,9 @@ blockquote,
   align-items: center;
 }
 
+.fa-brands:hover,
+.fa-solid:hover,
+.fa-regular:hover,
 .fa-brands:active,
 .fa-solid:active,
 .fa-regular:active {
