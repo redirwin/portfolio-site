@@ -82,8 +82,8 @@
 
   .social-icon {
     margin-right: 1.5em;
-    width: 4em;
-    height: 4em;
+    width: 3.5em;
+    height: 3.5em;
     transition: all 0.35s;
   }
 
@@ -96,6 +96,6 @@
   .fa-brands,
   .fa-solid,
   .fa-regular {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
