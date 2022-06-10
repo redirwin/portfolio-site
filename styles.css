@@ -130,9 +130,9 @@ blockquote,
   display: flex;
   justify-content: center;
   align-items: center;
-  background: none;
 }
 
+.social-icon:focus,
 .social-icon:active {
   cursor: pointer;
   background: #3c3d59;
@@ -153,8 +153,19 @@ blockquote,
   align-items: center;
 }
 
+.fa-brands:focus,
+.fa-solid:focus,
+.fa-regular:focus,
 .fa-brands:active,
 .fa-solid:active,
 .fa-regular:active {
   color: #ece1cc;
+  background: #3c3d59;
+}
+
+.social-icon:visited,
+.fa-brands:visited,
+.fa-solid:visited,
+.fa-regular:visited {
+  background-color: none;
 }
