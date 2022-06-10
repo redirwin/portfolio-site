@@ -20,6 +20,10 @@ body {
     Typography
 *******************/
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2 {
   margin: 0;
@@ -128,7 +132,6 @@ blockquote {
   justify-content: center;
   align-items: center;
   background: none;
-  text-decoration: none;
 }
 
 .social-icon:active {
@@ -142,7 +145,6 @@ blockquote {
 .fa-regular {
   font-size: 1.25rem;
   color: #fff;
-  text-decoration: none;
 }
 
 .fa-brands:active,
