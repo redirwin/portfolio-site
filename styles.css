@@ -80,13 +80,17 @@ header {
 }
 
 blockquote {
-    text-transform: none;
-    font-size: 1.5rem;
-    max-width: 400px;
-    color: #ece1cc;
-    margin: 0 auto 3em;
-    text-shadow: 0px 0px 1px white;
-  }
+  text-transform: none;
+  font-size: 1.5rem;
+  max-width: 400px;
+  color: #ece1cc;
+  margin: 0 auto 3em;
+  text-shadow: 0px 0px 1px white;
+}
+
+.column-two-container {
+  display: none;
+}
 
 /* .divider {
   margin: 0 0 4em;
@@ -128,8 +132,8 @@ blockquote {
 
 .social-icon:hover,
 .social-icon:active {
-    cursor: pointer;
-    background: #ece1cc;     
+  cursor: pointer;
+  background: #ece1cc;
 }
 
 .fa-brands,
