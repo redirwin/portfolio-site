@@ -130,7 +130,6 @@ blockquote {
   background: none;
 }
 
-.social-icon:hover,
 .social-icon:active {
   cursor: pointer;
   background: #ece1cc;
