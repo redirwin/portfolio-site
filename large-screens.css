@@ -1,22 +1,23 @@
-@media (min-width: 1200px) {
+@media (min-width: 850px) {
   .page-container {
     flex-direction: row;
   }
+
+  /*******************
+    Column 1
+  *******************/
 
   .column-one-container {
     width: 40%;
     min-width: 800px;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 3rem;
+    padding: 5em;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .profile-image-container {
     margin: 0 4em 0 0;
-  }
-
-  .column-two-container {
-    width: 60%;
   }
 
   .inner-container {
@@ -42,26 +43,96 @@
   blockquote {
     text-align: left;
     max-width: 400px;
+    font-size: 1.75rem;
+    text-shadow: 0px 0px 3px var(--dark);
+    letter-spacing: 0.075rem;
+  }
+
+  .header-title {
+    font-size: 5rem;
   }
 
   .lets-connect {
     display: none;
   }
 
-  .column-two-container {
-    display: block;
-  }
-
   .divider {
-    margin: 0 0 4em;
+    margin: 0 0 2em;
     border-bottom: 1px solid white;
     opacity: 0.4;
     width: 100%;
   }
 
-  .tech {
+  /*******************
+    Tech Selection
+  *******************/
+
+  .tech-container {
     display: block;
+    width: 100%;
+    text-align: left;
   }
+
+  .heading-tech {
+    margin-bottom: 2em;
+  }
+
+  .tech-list {
+    list-style-type: none;
+    margin: 0 0 0 -.8em;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .tech-btn {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    margin: 0 1.8em 1em 0;
+    width: 4em;
+    cursor: pointer;
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .select-circle {
+    height: 2em;
+    width: 2em;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: all 0.25s;
+  }
+
+  .select-circle.selected {
+    background: var(--dark);
+    border: 2px solid var(--light);
+    color: white;
+  }
+
+  /* .tech-btn.selected {
+    background: var(--dark);
+    border: 1px solid var(--light);
+    color: var(--light);
+  } */
+
+  /*******************
+    Social Links
+  *******************/
 
   footer {
     width: 100%;
@@ -85,14 +156,33 @@
 
   .social-icon:hover,
   .social-icon:active {
-    color: #ece1cc;
     transform: translateY(-10px);
-    background: #3c3d59;
+    background: var(--dark);
+    color: var(--light);
   }
 
   .fa-brands,
   .fa-solid,
   .fa-regular {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+  }
+
+  /*******************
+    Column 2
+  *******************/
+
+  .column-two-container {
+    display: block;
+    width: 60%;
+    /* background: rgb(60, 61, 89); */
+    /* background: linear-gradient(
+     90deg,
+      rgba(60, 61, 89, 0.85) 0%,
+      rgba(236, 225, 204, 0.5) 90%
+    ); */
+  }
+
+  .project-cards-container {
+    display: none;
   }
 }
