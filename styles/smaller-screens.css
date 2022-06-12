@@ -17,7 +17,7 @@ body {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  background: url("/images/funky-lines.webp");
+  background: url("images/funky-lines.webp");
 }
 
 .page-container {
@@ -200,7 +200,7 @@ h2.projects-heading {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.25)
     ),
-    url("/images/password-generator.webp");
+    url("images/password-generator.webp");
   background-size: cover;
 }
 
