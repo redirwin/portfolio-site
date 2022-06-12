@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-width: 350px;
@@ -47,8 +51,22 @@ h2 {
 }
 
 /*******************
-    Layout
+    Column 1
 *******************/
+
+.column-one-container {
+  padding: 4em 0 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(60, 61, 89, 0.9);
+  position: relative;
+}
+
+.inner-container {
+  padding: 0 2em;
+}
 
 header {
   display: flex;
@@ -70,18 +88,6 @@ header {
   font-size: 1.5rem;
   margin-left: 0.15rem;
   margin-top: 1.5rem;
-}
-
-.column-one-container {
-  padding: 4em 0 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: rgba(60, 61, 89, 0.9);
-}
-
-.inner-container {
-  padding: 0 2em;
 }
 
 .profile-image-container {
@@ -116,25 +122,30 @@ blockquote,
   margin-bottom: 1.5em;
 }
 
-.heading-tech {
-  font-size: 1.4rem;
+.tech-list {
+  display: none;
 }
 
-/*******************
-    Tech Selection
-*******************/
+.heading-tech {
+  font-size: 1.4rem;
+  margin: 0;
+}
 
-.tech-container {
-  display: none;
+.down-arrow {
+  color: var(--light);
+  font-size: 5rem;
+  /* border: 1px solid red; */
+  padding: 0.5em 1em;
+  text-decoration: none;
 }
 
 /*******************
     Column 2
-  *******************/
+*******************/
 
 .column-two-container {
   background-color: rgba(236, 225, 204, 0.8);
-  min-height: 50vh;
+  min-height: 100vh;
   position: relative;
 }
 

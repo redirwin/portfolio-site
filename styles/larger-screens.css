@@ -52,6 +52,10 @@
     font-size: 5rem;
   }
 
+  .down-arrow {
+    display: none;
+  }
+
   .divider {
     margin: 0 0 2em;
     border-bottom: 1px solid white;
