@@ -1,4 +1,4 @@
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
   .page-container {
     flex-direction: row;
   }
@@ -8,12 +8,12 @@
   *******************/
 
   .column-one-container {
+    min-height: 100vh;
     width: 40%;
     min-width: 800px;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 5em;
-    background-color: rgba(0, 0, 0, 0);
   }
 
   .profile-image-container {
@@ -37,7 +37,7 @@
 
   .header-text {
     text-align: left;
-    margin: 2em 0 3em;
+    margin: 3em 0 3em;
   }
 
   blockquote {
@@ -50,10 +50,6 @@
 
   .header-title {
     font-size: 5rem;
-  }
-
-  .lets-connect {
-    display: none;
   }
 
   .divider {
@@ -74,16 +70,22 @@
   }
 
   .heading-tech {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 
   .tech-list {
     list-style-type: none;
-    margin: 0 0 0 -.8em;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .tech-list li {
+    width: 30%;
+    margin-bottom: 1em;
   }
 
   .tech-btn {
@@ -91,24 +93,27 @@
     font-weight: 700;
     font-size: 1rem;
     letter-spacing: 0.05rem;
-    margin: 0 1.8em 1em 0;
-    width: 4em;
     cursor: pointer;
     color: white;
     background: none;
-    border: none;
-    border-radius: 50%;
+    border: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    transition: all 0.25s;
+  }
+
+  .tech-btn.hover {
+    transform: scale(1.1);
   }
 
   .select-circle {
-    height: 2em;
-    width: 2em;
+    height: 1.5em;
+    width: 1.5em;
     border: 2px solid white;
     border-radius: 50%;
-    margin-bottom: 0.5em;
+    margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,16 +124,10 @@
   }
 
   .select-circle.selected {
-    background: var(--dark);
-    border: 2px solid var(--light);
-    color: white;
+    color: var(--dark);
+    background: var(--light);
+    border: 1px solid var(--dark);
   }
-
-  /* .tech-btn.selected {
-    background: var(--dark);
-    border: 1px solid var(--light);
-    color: var(--light);
-  } */
 
   /*******************
     Social Links
@@ -141,48 +140,11 @@
     padding-top: 2em;
   }
 
-  .social-icons-container {
-    justify-content: flex-start;
-  }
-
-  .social-icon:link,
-  .social-icon:visited,
-  .social-icon:focus {
-    margin-right: 1.5em;
-    width: 3.5em;
-    height: 3.5em;
-    transition: all 0.35s;
-  }
-
-  .social-icon:hover,
-  .social-icon:active {
-    transform: translateY(-10px);
-    background: var(--dark);
-    color: var(--light);
-  }
-
-  .fa-brands,
-  .fa-solid,
-  .fa-regular {
-    font-size: 1.5rem;
-  }
-
-  /*******************
-    Column 2
-  *******************/
-
-  .column-two-container {
-    display: block;
-    width: 60%;
-    /* background: rgb(60, 61, 89); */
-    /* background: linear-gradient(
-     90deg,
-      rgba(60, 61, 89, 0.85) 0%,
-      rgba(236, 225, 204, 0.5) 90%
-    ); */
-  }
-
-  .project-cards-container {
+  .social-icons-container-smaller {
     display: none;
+  }
+
+  .social-icons-container-larger {
+    display: block;
   }
 }

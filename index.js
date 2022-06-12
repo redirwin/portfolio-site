@@ -9,15 +9,11 @@ techBtn.forEach((button) => {
       : (circle[1].innerHTML = "+");
   });
 
-  //   button.addEventListener("mouseover", function handleClick(event) {
-  //     let circle = button.childNodes;
-  //     console.log(circle[1].classList);
-  //     circle[1].classList.toggle("selected");
-  //   });
+  button.addEventListener("mouseenter", function handleClick(event) {
+    button.classList.toggle("hover");
+  });
 
-  //   button.addEventListener("mouseout", function handleClick(event) {
-  //     let circle = button.childNodes;
-  //     console.log(circle[1].classList);
-  //     circle[1].classList.toggle("selected");
-  //   });
+  button.addEventListener("mouseleave", function handleClick(event) {
+    button.classList.toggle("hover");
+  });
 });

@@ -19,11 +19,6 @@ body {
 .page-container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(
-    45deg,
-    rgba(60, 61, 89, 0.85) 30%,
-    rgba(236, 225, 204, 0.5) 90%
-  );
 }
 
 /*******************
@@ -65,22 +60,27 @@ header {
 }
 
 .header-title {
-  font-size: 3rem;
+  font-size: 4rem;
+  /* border: 1px solid red; */
+  line-height: 4rem;
+  /* margin-top: 2rem; */
   text-shadow: 0px 0px 1.5px var(--dark);
 }
 
 .header-subtitle {
   text-shadow: 0px 0px 1.5px var(--dark);
-  font-size: 1.7rem;
-  margin-left: .15rem
-
+  font-size: 1.5rem;
+  margin-left: 0.15rem;
+  margin-top: 1.5rem;
 }
 
 .column-one-container {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  padding: 4em 0 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(60, 61, 89, 0.95);
 }
 
 .inner-container {
@@ -123,10 +123,6 @@ blockquote,
   font-size: 1.4rem;
 }
 
-.column-two-container {
-  display: none;
-}
-
 /*******************
     Tech Selection
 *******************/
@@ -136,10 +132,27 @@ blockquote,
 }
 
 /*******************
+    Column 2
+  *******************/
+
+.column-two-container {
+  background-color: rgba(236, 225, 204, 0.8);
+  min-height: 50vh;
+}
+
+.project-cards-container {
+  display: none;
+}
+
+/*******************
     Social Links
 *******************/
 
-.social-icons-container {
+.social-icons-container-larger {
+  display: none;
+}
+
+.social-icons-container-smaller {
   margin: 0 auto 2em;
   display: flex;
   justify-content: space-around;
@@ -147,9 +160,9 @@ blockquote,
   max-width: 350px;
 }
 
-a.social-icon:link,
-a.social-icon:visited,
-a.social-icon:focus {
+a.social-icon-smaller:link,
+a.social-icon-smaller:visited,
+a.social-icon-smaller:focus {
   border: 2px solid white;
   border-radius: 50%;
   width: 3em;
@@ -160,16 +173,16 @@ a.social-icon:focus {
   background: none;
 }
 
-.social-icon:active {
+.social-icon-smaller:active {
   cursor: pointer;
   background: var(--dark);
   color: var(--light);
   border: 2px solid var(--dark);
 }
 
-.fa-brands,
-.fa-solid,
-.fa-regular {
+.social-icon-smaller .fa-brands,
+.social-icon-smaller .fa-solid,
+.social-icon-smaller .fa-regular {
   font-size: 1.5rem;
   color: #fff;
   background: none;
@@ -182,12 +195,12 @@ a.social-icon:focus {
   align-items: center;
 }
 
-.fa-brands:hover,
-.fa-solid:hover,
-.fa-regular:hover,
-.fa-brands:active,
-.fa-solid:active,
-.fa-regular:active {
+.social-icon-smaller .fa-brands:hover,
+.social-icon-smaller .fa-solid:hover,
+.social-icon-smaller .fa-regular:hover,
+.social-icon-smaller .fa-brands:active,
+.social-icon-smaller .fa-solid:active,
+.social-icon-smaller .fa-regular:active {
   background: var(--dark);
   color: var(--light);
 }
