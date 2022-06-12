@@ -1,4 +1,4 @@
-@media (min-width: 1000px) {
+@media (min-width: 1250px) {
   .page-container {
     flex-direction: row;
   }
@@ -205,5 +205,13 @@
 
   .column-two-container {
     width: 60%;
+    padding: 1em;
+    height: 100vh;
   }
+
+  h2.projects-heading {
+    font-size: 2rem;
+  }
+
+
 }
