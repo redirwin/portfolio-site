@@ -13,7 +13,7 @@ body {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  background: url(images/funky-lines.webp);
+  background: url(/images/funky-lines.webp);
 }
 
 .page-container {
@@ -61,9 +61,7 @@ header {
 
 .header-title {
   font-size: 4rem;
-  /* border: 1px solid red; */
   line-height: 4rem;
-  /* margin-top: 2rem; */
   text-shadow: 0px 0px 1.5px var(--dark);
 }
 
@@ -75,12 +73,11 @@ header {
 }
 
 .column-one-container {
-  /* min-height: 100vh; */
   padding: 4em 0 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(60, 61, 89, 0.95);
+  background: rgba(60, 61, 89, 0.9);
 }
 
 .inner-container {
@@ -162,7 +159,6 @@ blockquote,
 
 a.social-icon-smaller:link,
 a.social-icon-smaller:visited {
-  /* border: 2px solid white; */
   border-radius: 50%;
   width: 3em;
   height: 3em;

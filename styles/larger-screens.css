@@ -145,6 +145,61 @@
   }
 
   .social-icons-container-larger {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .social-icon-larger:link,
+  .social-icon-larger:visited,
+  .social-icon-larger:focus {
+    border: 2px solid #fff;
+    margin-right: 1.5em;
+    width: 3.5em;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s;
+    border-radius: 50%;
+  }
+
+  .social-icon-larger:hover,
+  .social-icon-larger:active {
+    transform: translateY(-10px);
+    background: var(--light);
+    color: var(--dark);
+  }
+
+  .fa-brands,
+  .fa-solid,
+  .fa-regular {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.35s;
+    border-radius: 50%;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.35s;
+  }
+
+  .social-icon-larger .fa-brands:hover,
+  .social-icon-larger .fa-solid:hover,
+  .social-icon-larger .fa-regular:hover,
+  .social-icon-larger .fa-brands:active,
+  .social-icon-larger .fa-solid:active,
+  .social-icon-larger .fa-regular:active {
+    color: var(--dark);
+  }
+
+  /*******************
+    Column 2
+  *******************/
+
+  .column-two-container {
+    width: 60%;
   }
 }
