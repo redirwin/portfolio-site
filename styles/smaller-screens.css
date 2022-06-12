@@ -157,8 +157,7 @@ blockquote,
   max-width: 350px;
 }
 
-a.social-icon-smaller:link,
-a.social-icon-smaller:visited {
+a.social-icon-smaller:link {
   border-radius: 50%;
   width: 3em;
   height: 3em;
@@ -169,7 +168,6 @@ a.social-icon-smaller:visited {
 }
 
 .social-icon-smaller:active,
-.social-icon-smaller:hover,
 .social-icon-smaller:focus {
   cursor: pointer;
   background: var(--dark);
@@ -178,10 +176,7 @@ a.social-icon-smaller:visited {
 
 .social-icon-smaller .fa-brands,
 .social-icon-smaller .fa-solid,
-.social-icon-smaller .fa-regular,
-.social-icon-smaller .fa-brands:visited,
-.social-icon-smaller .fa-solid:visited,
-.social-icon-smaller .fa-regular:visited {
+.social-icon-smaller .fa-regular {
   font-size: 1.5rem;
   color: #fff;
   border: 2px solid white;
@@ -195,9 +190,6 @@ a.social-icon-smaller:visited {
   align-items: center;
 }
 
-.social-icon-smaller .fa-brands:hover,
-.social-icon-smaller .fa-solid:hover,
-.social-icon-smaller .fa-regular:hover,
 .social-icon-smaller .fa-brands:active,
 .social-icon-smaller .fa-solid:active,
 .social-icon-smaller .fa-regular:active {
