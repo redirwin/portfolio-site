@@ -1,0 +1,165 @@
+.column-one-container {
+  padding: 4em 0 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(60, 61, 89, 0.9);
+  position: relative;
+}
+
+.inner-container {
+  padding: 0 2em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text {
+  order: -1;
+}
+
+.header-title {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-shadow: 0px 0px 1.5px var(--dark);
+}
+
+.header-subtitle {
+  text-shadow: 0px 0px 1.5px var(--dark);
+  font-size: 1.5rem;
+  margin-left: 0.15rem;
+  margin-top: 1.5rem;
+}
+
+.profile-image-container {
+  width: 10em;
+  height: 10em;
+  margin: 0 auto 3em;
+  border: 1px solid var(--light);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+blockquote,
+.lets-connect {
+  text-transform: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  max-width: 450px;
+  color: var(--light);
+  margin: 0 auto 2em;
+  text-shadow: 0px 0px 1px white;
+}
+
+.lets-connect {
+  margin-bottom: 1.5em;
+}
+
+.tech-list {
+  display: none;
+}
+
+.heading-tech {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.down-arrow {
+  color: var(--light);
+  font-size: 5rem;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+@media (max-height: 750px) {
+  blockquote {
+    margin-bottom: 0;
+  }
+
+  .heading-tech {
+    display: none;
+  }
+
+  .down-arrow {
+    padding: 0;
+    margin-top: -3em;
+  }
+}
+
+@media (max-height: 675px) {
+  blockquote {
+    display: none;
+  }
+  .heading-tech {
+    display: block;
+  }
+}
+
+@media (min-width: 1250px) {
+  .column-one-container {
+    min-height: 100vh;
+    width: 40%;
+    min-width: 800px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5em;
+  }
+
+  .profile-image-container {
+    margin: 0 4em 0 0;
+  }
+
+  .inner-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    display: block;
+  }
+
+  .image-quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header-text {
+    text-align: left;
+    margin: 3em 0 3em;
+  }
+
+  blockquote {
+    text-align: left;
+    max-width: 400px;
+    font-size: 1.75rem;
+    text-shadow: 0px 0px 3px var(--dark);
+    letter-spacing: 0.075rem;
+  }
+
+  .header-title {
+    font-size: 5rem;
+  }
+
+  .down-arrow {
+    display: none;
+  }
+
+  .divider {
+    margin: 0 0 2em;
+    border-bottom: 1px solid white;
+    opacity: 0.4;
+    width: 100%;
+  }
+}
