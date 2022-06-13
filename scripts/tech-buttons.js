@@ -1,3 +1,5 @@
+// Change style of tech buttons when clicked and hovered.
+
 const techBtn = document.querySelectorAll(".tech-btn");
 
 techBtn.forEach((button) => {

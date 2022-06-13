@@ -1,3 +1,12 @@
+.tech-list {
+  display: none;
+}
+
+.heading-tech {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
 @media (min-width: 1250px) {
   .tech-container {
     display: block;
@@ -6,7 +15,7 @@
   }
 
   .heading-tech {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
   }
 
   .tech-list {

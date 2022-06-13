@@ -1,3 +1,7 @@
+/*******************
+    Column 1
+*******************/
+
 .column-one-container {
   padding: 4em 0 2em;
   min-height: 100vh;
@@ -64,15 +68,6 @@ blockquote,
 
 .lets-connect {
   margin-bottom: 1.5em;
-}
-
-.tech-list {
-  display: none;
-}
-
-.heading-tech {
-  font-size: 1.4rem;
-  margin: 0;
 }
 
 .down-arrow {

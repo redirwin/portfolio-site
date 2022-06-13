@@ -4,9 +4,10 @@
 
 .column-two-container {
   background-color: rgba(236, 225, 204, 0.8);
-  min-height: 100vh;
+  min-height:100vh;
   position: relative;
   padding: 2em 0 7em;
+  overflow-y: hidden;
 }
 
 h2.projects-heading {
@@ -20,12 +21,13 @@ h2.projects-heading {
   display: inline-flex;
   justify-content: center;
   flex-flow: row wrap;
+  height: 80vh;
 }
 
 .single-card-container {
   margin: 2em 2em 3.5em 2em;
   height: 300px;
-  width: 300px;
+  width: 275px;
   min-width: 250px;
   border: 3px solid var(--dark);
   border-radius: 5px;
@@ -42,7 +44,7 @@ h2.projects-heading {
 
 .all-cards-container::after {
   margin: 2em 2em 3.5em 2em;
-  width: 300px;
+  width: 270px;
   min-width: 250px;
 }
 
@@ -111,7 +113,7 @@ h2.projects-heading {
 }
 
 .all-cards-container {
-  height: 80vh;
+  height: 95vh;
   width: 100%;
   overflow-y: scroll;
 }
