@@ -1,4 +1,8 @@
 :root {
   --dark: #3c3d59;
   --light: #ece1cc;
+  --lingrad1: rgba(255, 255, 255, .3);
+  --lingrad2: rgba(255, 255, 255, .3);
+  --lingrad3: rgba(255, 255, 255, 1);
+  --lingrad4: rgba(255, 255, 255, .9);
 }

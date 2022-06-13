@@ -1,0 +1,9 @@
+#password-generator {
+  background-image: linear-gradient(180deg, var(--lingrad1), var(--lingrad2)),
+    url("../images/password-generator.webp");
+}
+
+#invoice-creator {
+  background-image: linear-gradient(180deg, var(--lingrad1), var(--lingrad2)),
+    url("../images/invoice-creator.webp");
+}

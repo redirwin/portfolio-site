@@ -19,3 +19,5 @@ techBtn.forEach((button) => {
     button.classList.toggle("hover");
   });
 });
+
+export { techBtn };
