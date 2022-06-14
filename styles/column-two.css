@@ -3,10 +3,10 @@
 *******************/
 
 .column-two-container {
-  background-color: rgba(236, 225, 204, .5);
+  background-color: rgba(236, 225, 204, 0.5);
   min-height: 100vh;
   position: relative;
-  padding: 2em 0 7em;
+  padding: 1em 0 0 0;
   overflow-y: hidden;
 }
 
@@ -56,16 +56,12 @@
 }
 
 .card-about-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: absolute;
   bottom: 0;
-  border: 1px solid var(--dark);
-  padding: 0 1em 0.25em;
+  padding: 0.25em 1em 0.25em;
   text-align: left;
   text-transform: none;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.065em;
   color: rgba(0, 0, 0, 0);
   height: 90%;
   background-color: none;
@@ -78,12 +74,44 @@
   background: rgba(60, 61, 89, 1);
 }
 
+.github-directions,
+.view-directions {
+  position: absolute;
+  width: 90%;
+  padding: 0 0.75em;
+  background: rgba(236, 225, 204, .95);;
+  border-radius: 5px;
+  color: var(--dark);
+  text-shadow: 0px 0px 1px var(--dark);
+  box-shadow: 0px 0px 5px var(--dark);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.065em;
+  transition: all 0.35s;
+  z-index: 100;
+}
+
+.github-directions {
+  bottom: 2em;
+  left: 3em;
+}
+
+.view-directions {
+  bottom: 2.25em;
+  left: 5em;
+}
+
+.card-about-wrapper a {
+  text-decoration: underline;
+  color: inherit;
+}
+
 .card-btn-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-around;
   position: absolute;
-  bottom: -2em;
+  bottom: -1.5em;
 }
 
 .card-btn {
@@ -95,10 +123,16 @@
   padding: 0;
   justify-content: center;
   align-items: center;
-  background: var(--dark);
+  background-color: rgba(60, 61, 89, 0.8);
   color: #fff;
   box-shadow: 1px 1px 5px var(--dark);
   cursor: pointer;
+  transition: all .35s;
+}
+
+.card-btn:hover {
+  background-color: rgba(236, 225, 204, 0.95);
+  transform: translateY(-.5em);
 }
 
 .card-btn i {
@@ -137,6 +171,7 @@
     width: 60%;
     padding: 1em;
     height: 100vh;
+    overflow: hidden;
   }
 
   h2.projects-heading {

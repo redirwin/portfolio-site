@@ -1,103 +1,94 @@
-/*******************
-    Social Links
-*******************/
+footer.social-small {
+  margin-top: 3em;
+  background-color: rgba(60, 61, 89, 1);
+  display: flex;
+  justify-content: center;
+}
 
-.social-icons-container-larger {
+footer.social-large {
   display: none;
 }
 
-.social-icons-smaller-outer-container {
-  position: absolute;
-  bottom: 0;
+.social-icons-container {
+  display: flex;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5em 0;
-  background: rgba(60, 61, 89, 0.9);
-}
-
-.social-icons-container-smaller {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
   max-width: 350px;
+  padding: 1.5em 2em;
+  justify-content: space-between;
 }
 
-a.social-icon-smaller:link {
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
+.social-icon:link,
+.social-icon:focus,
+.social-icon:visited {
+  border: 2px solid #fff;
+  width: 2.5em;
+  height: 2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: none;
-}
-
-.social-icon-smaller:active,
-.social-icon-smaller:focus {
-  cursor: pointer;
-  background: var(--dark);
-  color: var(--light);
-}
-
-.social-icon-smaller .fa-brands,
-.social-icon-smaller .fa-solid,
-.social-icon-smaller .fa-regular {
-  font-size: 1.5rem;
-  color: #fff;
-  border: 2px solid white;
+  transition: all 0.35s;
   border-radius: 50%;
-  background: none;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0);
 }
 
-.social-icon-smaller .fa-brands:active,
-.social-icon-smaller .fa-solid:active,
-.social-icon-smaller .fa-regular:active {
+.social-icon:hover,
+.social-icon:active {
   background: var(--light);
   color: var(--dark);
-  border: 1px solid var(--dark);
+}
+
+.fa-brands,
+.fa-solid,
+.fa-regular {
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.35s;
+  border-radius: 50%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.35s;
+}
+
+.social-icon-larger .fa-brands:hover,
+.social-icon-larger .fa-solid:hover,
+.social-icon-larger .fa-regular:hover,
+.social-icon-larger .fa-brands:active,
+.social-icon-larger .fa-solid:active,
+.social-icon-larger .fa-regular:active {
+  color: var(--dark);
 }
 
 @media (min-width: 1250px) {
-  footer {
-    width: 100%;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    margin-top: 3em;
-    padding-top: 2em;
-  }
-
-  .social-icons-smaller-outer-container {
+  footer.social-small {
     display: none;
   }
 
-  .social-icons-container-larger {
+  footer.social-large {
+    display: flex;
+    width: 100%;
+    margin-top: 3.5em;
     display: flex;
     justify-content: flex-start;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
   }
 
-  .social-icon-larger:link,
-  .social-icon-larger:visited,
-  .social-icon-larger:focus {
-    border: 2px solid #fff;
-    margin-right: 1.5em;
-    width: 3.5em;
-    height: 3.5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.35s;
-    border-radius: 50%;
+  .social-icons-container {
+    padding: 1.75em 2em 0 0;
   }
 
-  .social-icon-larger:hover,
-  .social-icon-larger:active {
+  .social-icon:link,
+  .social-icon:visited,
+  .social-icon:focus {
+    width: 3.25em;
+    height: 3.25em;
+  }
+
+  .social-icon:hover,
+  .social-icon:active {
     transform: translateY(-10px);
     background: var(--light);
     color: var(--dark);
@@ -107,24 +98,5 @@ a.social-icon-smaller:link {
   .fa-solid,
   .fa-regular {
     font-size: 1.5rem;
-    color: #fff;
-    transition: all 0.35s;
-    border-radius: 50%;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.35s;
-  }
-
-  .social-icon-larger .fa-brands:hover,
-  .social-icon-larger .fa-solid:hover,
-  .social-icon-larger .fa-regular:hover,
-  .social-icon-larger .fa-brands:active,
-  .social-icon-larger .fa-solid:active,
-  .social-icon-larger .fa-regular:active {
-    color: var(--dark);
   }
 }
